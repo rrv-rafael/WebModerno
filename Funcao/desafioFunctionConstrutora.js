@@ -9,6 +9,8 @@ function Pessoa(nome) {
 const pessoa = new Pessoa('Rafael')
 pessoa.falar()
 
+console.log(pessoa)
+
 // class Pessoa {
 //     constructor(nome) {
 //         this.nome = nome
