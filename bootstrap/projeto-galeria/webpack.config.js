@@ -9,7 +9,7 @@ module.exports = {
     mode: modoDev ? 'development' : 'production',
     entry: './src/index.js',
     devServer: {
-        contentBase: './build',
+        static: './build',
         port: 9000,
     },
     optimization: {
@@ -41,8 +41,7 @@ module.exports = {
             test: /\.s?[ac]ss$/,
             use: [
                 MiniCssExtractPlugin.loader,
-                // 'style-loader', // Adiciona CSS a DOM injetando a tag <style>
-                'css-loader', // interpreta @import, url()...
+                'css-loader',
                 'sass-loader',
             ]
         }, {
