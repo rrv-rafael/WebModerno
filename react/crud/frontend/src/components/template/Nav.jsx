@@ -1,15 +1,16 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './Nav.css';
 
 const nav = props =>
     <aside className="menu-area">
         <nav className="menu">
-            <a href="#">
+            <Link to="/">
                 <i className="bi bi-house-door-fill"></i> Início
-            </a>
-            <a href="#/users">
+            </Link>
+            <Link to="/users">
                 <i className="bi bi-people-fill"></i> Usuários
-            </a>
+            </Link>
         </nav>
     </aside>
 
